@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Angel Garcia">
+    <meta name="description" content="Mi Primera Pagina Web">
+    <meta name="viewport" content="witdh=device-witdh,initial-scare=1.0">
+    <title>Contenido Multimedia</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url(cmul.jpg); 
+            background-color: #eaeaea;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Centra el contenido horizontalmente */
+            padding: 20px;
+        }
+        h1 {
+            text-align: center; /* Centra el texto del título */
+            color: #000000;
+            margin-bottom: 30px; /* Espacio debajo del título */
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            width: 70%;
+          background-color:  rgba(0, 0, 0, 0.37);
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.767);
+            padding: 20px;
+        }
+        video {
+            width: 25%;
+            border-radius: 10px;
+        }
+        .audio-link {
+            width: 45%;
+            text-align: center; /* Centra el audio y el enlace */
+        }
+        audio {
+            margin-top: 20px; /* Espacio encima del audio */
+        }
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 15px;
+            background-color: #336fb4;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        a:hover {
+            background-color: #120fbe; /* Cambia de color al pasar el mouse */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Contenido Multimedia</h1>
+
+    <div class="container">
+        <video controls>
+            <source src="paa.mp4" type="video/mp4">
+            Tu navegador no soporta el video.
+        </video>
+
+        <div class="audio-link">
+            <audio controls autoplay loop>
+                <source src="lambo.mp3" type="audio/mpeg">
+                Tu navegador no soporta el audio.
+            </audio>
+
+            <a href="https://www.youtube.com/watch?v=6ZgTyNFkm8g" target="_blank">Ver video en youtube!</a>
+        </div>
+    </div>
+
+</body>
+</html>

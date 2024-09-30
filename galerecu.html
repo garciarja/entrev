@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Angel Garcia">
+    <meta name="description" content="Mi Primera Pagina Web">
+    <meta name="viewport" content="witdh=device-witdh,initial-scare=1.0">
+    <title>Galeria De Recuerdos</title>
+    <style>
+        body {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: #f0f0f0;
+            background-image: url(pree.jpg); 
+        }
+        .item {
+            margin: 10px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        img, video {
+            width: 350px; /* Ajusta el tamaño según necesites */
+            height: 250px;
+            border-radius: 8px;
+        }
+        .section{
+            transition: transform 0.3s ease; /* Suaviza la transición */
+            margin-bottom: 15px;
+        }
+        .section:hover {
+            transform: scale(1.05); /* Agranda el texto al pasar el mouse */
+            color: #007BFF; /* Cambia el color del texto */
+        }
+        h1 {
+            text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: #1c3fda;
+        }
+        .bio{
+            background-color: rgba(0, 0, 0, 0.7); 
+            padding: 30px;
+            width: 90%;
+            margin: 30px;
+            border-radius: 10px;
+        }
+        h3{
+            color:white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="bio">
+    <div class="section">
+        <h1>Galeria de Recuerdos</h1>
+        <h3>Aunque no sean grandes modificaciones es el comienzo, pero el afán por los carros es inmenso <br><mark>"La bellza está en los detalles"</mark></h3>
+    </div>
+</div>
+    <div class="item">
+        <img src="yy.jpg" alt="Descripción de la imagen 1">
+    </div>
+    
+    <div class="item">
+        <img src="uuuu.jpg" alt="Descripción de la imagen 2">
+    </div>
+    
+    <div class="item">
+        <img src="image.jpg" alt="Descripción de la imagen 3">
+    </div>
+    
+    <div class="item">
+        <video controls>
+            <source src="uyy.mp4" type="video/mp4">
+            Tu navegador no soporta el video.
+        </video>
+    </div>
+
+
+</body>
+</html>
